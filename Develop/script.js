@@ -3,13 +3,14 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   // CODE GOES HERE
-  var passwordLength = prompt("How many characters do you want your password to be?");
+  // list of variables
   var listOfUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var listOfLowerCase = "abcdefghijklmnopqrstuvwxyz";
   var listOfSpecialValues = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
   var listOfNum = "0987654321";
   var poolOfChoices = "";
   
+  var passwordLength = prompt("How many characters do you want your password to be?");
   if (passwordLength < 8) {
     alert("Please choose a value greater than 8.");
   } else if (passwordLength > 128) {
