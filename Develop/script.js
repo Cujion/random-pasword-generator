@@ -10,6 +10,7 @@ function generatePassword() {
   var listOfNum = "0987654321";
   var poolOfChoices = "";
   var passwordOutcome = "";
+
   // password length check
   var passwordLength = prompt("How many characters do you want your password to be?");
   if (passwordLength < 8) {
@@ -19,6 +20,7 @@ function generatePassword() {
   } else {
     confirm("Are you sure you want to continue?");
   }
+
 // check if you want uppercase letters in your password
   var upperCaseLetters = confirm("Do you want to have uppercase letters in your password?");
   if (upperCaseLetters === true) {
@@ -28,6 +30,7 @@ function generatePassword() {
   } else {
     alert("No uppercase letters selected.");
   }
+
 // check if you want lowercase letters in your password
   var lowerCaseLetters = confirm("Do you want to have lowercase letters in your password?");
   if (lowerCaseLetters === true) {
@@ -37,6 +40,7 @@ function generatePassword() {
   } else {
     alert("No lowercase letters selected.");
   }
+
 // check if you want special characters in your password
   var specialCharacters = confirm("Do you want to have special characters in your password?"); 
   if (specialCharacters === true) {
@@ -46,6 +50,7 @@ function generatePassword() {
   } else {
     alert("No special characters selected.");
   }
+
 // check if you want numbers in your password
   var numValue = confirm("Do you want to have numbers in your password?");
   if (numValue === true) {
@@ -55,6 +60,7 @@ function generatePassword() {
   } else {
     alert("No numbers selected.");
   }
+  
 // check to see if at least one special option has been selected
   if (upperCaseLetters === false && lowerCaseLetters === false && specialCharacters === false && numValue === false) {
     alert("Please select at least one of the special criteria");
