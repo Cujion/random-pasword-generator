@@ -9,10 +9,11 @@ function generatePassword() {
   var listOfSpecialValues = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
   var listOfNum = "0987654321";
   var poolOfChoices = "";
+  var passwordOutcome = "";
   // password length check
   var passwordLength = prompt("How many characters do you want your password to be?");
   if (passwordLength < 8) {
-    alert("Please choose a value greater than 8.");
+    alert("Please choose a value greater than 8." + passwordLength);
   } else if (passwordLength > 128) {
     alert("Please choose a value less than 128.");
   } else {
@@ -54,15 +55,19 @@ function generatePassword() {
   } else {
     alert("No numbers selected.");
   }
-
-  return "";
+  
+  for(var i = 0; i < passwordLength; i++){
+    randomizedPasswordSelector = Math.floor(Math.random() * poolOfChoices.length);
+    passwordOutcome += poolOfChoices.substring(randomizedPasswordSelector, randomizedPasswordSelector +1);
+  console.log(randomizedPasswordSelector);
+}  
+  return passwordOutcome;
 }
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
