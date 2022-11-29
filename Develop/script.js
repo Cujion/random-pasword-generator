@@ -2,57 +2,56 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-  // YOUR CODE GOES HERE
-  var specialCharacters = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
-  var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
-  var upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numeric = "0987654321";
-  var passwordLength = prompt("How many characters do you want your password to be?") 
-  var isUppercase = confirm("Would you like to use uppercase letters?");
-  var isLowercase = confirm("Would you like to use lowercase letters?");
-  var isSpecial = confirm("Would you like to use special characters?");
-  var isNumber = confirm("Would you like to use numbers?");
-
-  if (passwordLength >= 8 || passwordLength >= 128 ) {
-    return alert("Your password will be " + passwordLength + " " + "characters long");
-  } else if (isNaN(passwordLength)) {
-    passwordLength = prompt("Please Choose a valid number.");
+  // CODE GOES HERE
+  var passwordLength = prompt("How many characters do you want your password to be?");
+  var listOfUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var listOfLowerCase = "abcdefghijklmnopqrstuvwxyz";
+  var listOfSpecialValues = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
+  var listOfNum = "0987654321";
+  var poolOfChoices = "";
+  
+  if (passwordLength < 8) {
+    alert("Please choose a value greater than 8.");
+  } else if (passwordLength > 128) {
+    alert("Please choose a value less than 128.");
   } else {
-    return "Please choose a number between 8-128.";
+    confirm("Are you sure you want to continue?");
   }
 
-  // USE UPPER CASE LETTERS
-  if (isUppercase) {
-    alert("Uppercase letters have been selected.");
+  var upperCaseLetters = confirm("Do you want to have uppercase letters in your password?");
+  if (upperCaseLetters === true) {
+    poolOfChoices += listOfUpperCase
+    console.log(poolOfChoices);
   } else {
-    alert("No uppercase letters have been selected.");
+    alert("No uppercase letters selected.");
   }
 
-  // USE LOWER CASE LETTERS
-  if (isLowercase) {
-    alert("Lowercase letters have been selected.");
+  var lowerCaseLetters = confirm("Do you want to have lowercase letters in your password?");
+  if (lowerCaseLetters === true) {
+    poolOfChoices += listOfLowerCase
+    console.log(poolOfChoices);
   } else {
-    alert("No lowercase letters have been selected.");
+    alert("No lowercase letters selected.");
   }
 
-  // USE SPECIAL CHARACTERS
-  if (isSpecial) {
-    alert("Special characters have been selected.");
+  var specialCharacters = confirm("Do you want to have special characters in your password?"); 
+  if (specialCharacters === true) {
+    poolOfChoices += listOfSpecialValues
+    console.log(poolOfChoices);
   } else {
-    alert("No special characters have been selected.");
+    alert("No special characters selected.");
   }
 
-  // USE NUMBERS
-  if (isNumber) {
-    alert("Numbers have been selected.");
+  var numValue = confirm("Do you want to have numbers in your password?");
+  if (numValue === true) {
+    poolOfChoices += listOfNum
+    console.log(poolOfChoices);
   } else {
-    alert("No numbers have been selected.");
+    alert("No numbers selected.");
   }
 
-  //GRAB RANDOM LETTERS 
-  console.log(choosefrom)
   return "";
-  }
+}
 
 // Write password to the #password input
 function writePassword() {
