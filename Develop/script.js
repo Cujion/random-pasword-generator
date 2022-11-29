@@ -55,7 +55,7 @@ function generatePassword() {
   } else {
     alert("No numbers selected.");
   }
-
+// check to see if at least one special option has been selected
   if (upperCaseLetters === false && lowerCaseLetters === false && specialCharacters === false && numValue === false) {
     alert("Please select at least one of the special criteria");
   }
