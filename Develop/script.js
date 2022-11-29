@@ -55,7 +55,7 @@ function generatePassword() {
   } else {
     alert("No numbers selected.");
   }
-  
+    // password randomization
   for(var i = 0; i < passwordLength; i++){
     randomizedPasswordSelector = Math.floor(Math.random() * poolOfChoices.length);
     passwordOutcome += poolOfChoices.substring(randomizedPasswordSelector, randomizedPasswordSelector +1);
