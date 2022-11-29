@@ -13,7 +13,7 @@ function generatePassword() {
   // password length check
   var passwordLength = prompt("How many characters do you want your password to be?");
   if (passwordLength < 8) {
-    alert("Please choose a value greater than 8." + passwordLength);
+    alert("Please choose a value greater than 8.");
   } else if (passwordLength > 128) {
     alert("Please choose a value less than 128.");
   } else {
@@ -55,6 +55,11 @@ function generatePassword() {
   } else {
     alert("No numbers selected.");
   }
+
+  if (upperCaseLetters === false && lowerCaseLetters === false && specialCharacters === false && numValue === false) {
+    alert("Please select at least one of the special criteria");
+  }
+
     // password randomization
   for(var i = 0; i < passwordLength; i++){
     randomizedPasswordSelector = Math.floor(Math.random() * poolOfChoices.length);
