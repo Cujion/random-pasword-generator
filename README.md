@@ -1,6 +1,6 @@
 # My-Portfolio
 
-<!-- [Link to my project](https://cujion.github.io/random-pasword-generator/) -->
+[Link to my project](https://cujion.github.io/random-pasword-generator/)
 
 ## Table of Contents
 - [Description](#description)
