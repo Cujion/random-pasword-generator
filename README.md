@@ -18,13 +18,13 @@ whole number and then a math.random which randomly selects out of the pool of
 options you picked to be able to generate a password for you.
 
 ## Visuals
-![Whole webpage visual](./assets/images/fullpageview.png)
-![Password length](./assets/images/passwordlength.png)
-![Uppercase](./assets/images/uppercase.png)
-![Lowercase](./assets/images/lowercase.png)
-![Special characters](./assets/images/speicalcharacters.png)
-![Numbers](./assets/images/numbers.png)
-![Password generated](./assets/images/passwordgenerated.png)
+![Whole webpage visual](./Assets/images/fullpageview.png)
+![Password length](./Assets/images/passwordlength.png)
+![Uppercase](./Assets/images/uppercase.png)
+![Lowercase](./Assets/images/lowercase.png)
+![Special characters](./Assets/images/speicalcharacters.png)
+![Numbers](./Assets/images/numbers.png)
+![Password generated](./Assets/images/passwordgenerated.png)
 
 ## Installation
 * Open the index.html file in a web browser to display the website. To access 
