@@ -15,10 +15,16 @@ function generatePassword() {
   var passwordLength = prompt("How many characters do you want your password to be?");
   if (passwordLength < 8) {
     alert("Please choose a value greater than 8.");
+    // stops the function from continuing on if it does not meet the criteria
+    return "";
   } else if (passwordLength > 128) {
     alert("Please choose a value less than 128.");
+    // stops the function from continuing on if it does not meet the criteria
+    return "";
   } else {
-    confirm("Are you sure you want to continue?");
+    var continueGen = confirm("Are you sure you want to continue?");
+    // if false stops the function excursion
+    if (!continueGen) return "";
   }
 
 // check if you want uppercase letters in your password
