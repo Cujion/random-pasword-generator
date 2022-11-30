@@ -1,6 +1,6 @@
 # My-Portfolio
 
-[Link to my project](https://cujion.github.io/random-pasword-generator/)
+<!-- [Link to my project](https://cujion.github.io/random-pasword-generator/) -->
 
 ## Table of Contents
 - [Description](#description)
@@ -28,10 +28,10 @@ options you picked to be able to generate a password for you.
 
 ## Installation
 * Open the index.html file in a web browser to display the website. To access 
-the code while in the web browser of google chrome right on the page and click 
-inspect and it will open up the chrome dev tools which will allow you to see the
-javascript along with the console.log of what and how the script is doing to 
-generate a random password for this webpage. 
+the code while in the web browser of google chrome right click on the page and 
+click inspect and it will open up the chrome dev tools which will allow you to 
+see the javascript along with the console.log of what and how the script is 
+running in order to generate a random password for this webpage. 
 
 ## License
 * MIT License
