@@ -1,4 +1,4 @@
-# My-Portfolio
+# Random-Password-Generator
 
 [Link to my project](https://cujion.github.io/random-pasword-generator/)
 
