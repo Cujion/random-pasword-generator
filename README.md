@@ -36,7 +36,7 @@ running in order to generate a random password for this webpage.
 ## License
 * MIT License
 
-* Copyright (c) [2022]] [christopher bonime]
+* Copyright (c) [2022]] [Christopher Bonime]
 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
