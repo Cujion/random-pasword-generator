@@ -5,7 +5,6 @@
 ## Table of Contents
 - [Description](#description)
 - [Visuals](#visuals)
-- [Installation](#installation)
 - [License](#license)
 
 
@@ -25,13 +24,6 @@ options you picked to be able to generate a password for you.
 ![Special characters](./Assets/images/speicalcharacters.png)
 ![Numbers](./Assets/images/numbers.png)
 ![Password generated](./Assets/images/passwordgenerated.png)
-
-## Installation
-* Open the index.html file in a web browser to display the website. To access 
-the code while in the web browser of google chrome right click on the page and 
-click inspect and it will open up the chrome dev tools which will allow you to 
-see the javascript along with the console.log of what and how the script is 
-running in order to generate a random password for this webpage. 
 
 ## License
 * MIT License
