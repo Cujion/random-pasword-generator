@@ -32,7 +32,6 @@ function generatePassword() {
   if (upperCaseLetters === true) {
     // if yes concat pool of choices with uppercase letters for your password
     poolOfChoices += listOfUpperCase
-    console.log(poolOfChoices);
   } else {
     alert("No uppercase letters selected.");
   }
@@ -42,7 +41,6 @@ function generatePassword() {
   if (lowerCaseLetters === true) {
     // if yes concat pool of choices with lowercase letters for your password
     poolOfChoices += listOfLowerCase
-    console.log(poolOfChoices);
   } else {
     alert("No lowercase letters selected.");
   }
@@ -52,7 +50,6 @@ function generatePassword() {
   if (specialCharacters === true) {
     // if yes concat pool of choices with special characters for your password
     poolOfChoices += listOfSpecialValues
-    console.log(poolOfChoices);
   } else {
     alert("No special characters selected.");
   }
@@ -62,7 +59,6 @@ function generatePassword() {
   if (numValue === true) {
     // if yes concat pool of choices with numbers for your password
     poolOfChoices += listOfNum
-    console.log(poolOfChoices);
   } else {
     alert("No numbers selected.");
   }
@@ -76,7 +72,6 @@ function generatePassword() {
   for(var i = 0; i < passwordLength; i++){
     randomizedPasswordSelector = Math.floor(Math.random() * poolOfChoices.length);
     passwordOutcome += poolOfChoices.substring(randomizedPasswordSelector, randomizedPasswordSelector +1);
-  console.log(randomizedPasswordSelector);
 }  
   return passwordOutcome;
 }
